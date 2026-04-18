@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BẢO SHARE AIM VIP</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: radial-gradient(circle at top, #2b0000, #000000);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    margin-top: 60px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid red;
+    box-shadow: 0 0 20px red;
+}
+
+h1 {
+    color: red;
+    margin-top: 15px;
+    text-shadow: 0 0 10px red;
+}
+
+.download-btn {
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: red;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 15px red;
+}
+
+.download-btn:hover {
+    background: darkred;
+}
+
+.qr-box {
+    margin-top: 40px;
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid red;
+    box-shadow: 0 0 10px red;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <img class="avatar" src="https://i.imgur.com/6VBx3io.png" alt="avatar">
+
+    <h1>DOWNLOAD AIM VIP</h1>
+
+    <button class="download-btn" onclick="downloadFile()">
+        Tải xuống
+    </button>
+
+    <!-- QR BANK ONLY -->
+    <div class="qr-box">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=AGRIBANK-1420205146778-Vu%20Phuong%20Anh" 
+             alt="QR Donate">
+    </div>
+
+</div>
+
+<script>
+function downloadFile() {
+    const link = "https://example.com/file.zip";
+    window.open(link, "_blank");
+}
+</script>
+
+</body>
+</html>
